@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <div class="hero">
+		<nav>
+			<a href="index2.html"><img src="image/logo.png" class="logo"></a>
+				<ul> 
+					<li><a href="index2.html">Menu</a></li>
+					<li><a href="aboutme.html">About Me</a></li>
+					<li><a href="friends.html">Friends</a></li>
+					<li><a href="hobby.html">Hobby</a></li>
+					<li><a href="spotify.html">Spotify</a></li>
+					<li><a href="socmed.html">Social Media</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+		</nav>
+        
+    <div class="container">
+        <h1>My Hobby</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="image/game1.jpg" width="100%">
+                    <img src="image/play.png" class="play-btn" onclick="playVideo('video/game1.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="image/game2.jpg" alt="">
+                        <img src="image/play.png" class="play-btn" onclick="playVideo('video/game3.mp4')">
+
+                    </div>
+                    <p>Call Of Duty Mobile: Rank</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="image/game3.jpg" alt="">
+                        <img src="image/play.png" class="play-btn" onclick="playVideo('video/game2.mp4')">
+
+                    </div>
+                    <p>Genshin Impact : Arlecchino Showcase</p>
+                </div>
+                <a href="spotify.html" class="btn anim">NEXT PAGE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoplayer">
+        <video  width="100%" controls autoplay id="myvideo">
+
+            <source src="image/game4.jpg" type="video/mp4" >
+        </video>
+        <img src="image/close.png" class="close-btn" onclick="stopbtn()">
+    </div>
+
+<script>
+
+var videoplayer = document.getElementById("videoplayer");
+var myvideo = document.getElementById("myvideo");
+
+function stopbtn(){
+    videoplayer.style.display = "none";
+}
+function playVideo(file){
+myvideo.src = file;
+videoplayer.style.display = "block";
+}
+        function openVideo() {
+            window.open('https://www.youtube.com/watch?v=VIDEO_ID', '_blank');
+        }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+    <body background="image/wallpaper.jpg" content="width=device-width, initial-scale=1.0">
+
+        <div class="hero">
+            <nav>
+                <a href="index2.html"><img src="image/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index2.html">Menu</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="hobby.html">Hobby</a></li>
+                    <li><a href="spotify.html">Spotify</a></li>
+                    <li><a href="socmed.html">Social Media</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+                <center>
+                <h2> Gallery- Random Image I Like</h2>
+                </center>
+
+
+            <div class="full-img" id="fullImgBox">
+                <img src="image/random1.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="img-gallery">
+                    <img src="image/random1.jpg" onclick="openFullImg(this.src)">
+                    <img src="image/random2.jpg"  onclick="openFullImg(this.src)">
+                    <img src="image/random3.jpg"  onclick="openFullImg(this.src)">
+                    <img src="image/dina2.jpg" onclick="openFullImg(this.src)">
+                    <img src="image/random4.jpg" onclick="openFullImg(this.src)">
+                    <img src="image/random5.jpg" onclick="openFullImg(this.src)">
+                    <img src="image/rando6.jpg" onclick="openFullImg(this.src)">
+                    <img src="image/cikpiya.jpg" onclick="openFullImg(this.src)">
+                    <img src="image/blacks.jpg" onclick="openFullImg(this.src)">
+             </div>
+        </div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox")
+    var fullImg = document.getElementById("fullImg")
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src= pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+</body>
+</html>
